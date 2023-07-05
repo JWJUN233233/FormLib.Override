@@ -13,10 +13,42 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="源文件\Collection">
+      <UniqueIdentifier>{4efdc3c2-82a0-45f4-b40b-a6f8927f0046}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\System">
+      <UniqueIdentifier>{e977f29d-6e14-4258-9086-839f6cd955fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\System\Collection">
+      <UniqueIdentifier>{44f56fcf-3b25-477a-9c4d-5896c51b6b17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\System\Util">
+      <UniqueIdentifier>{74f606c2-aa7c-49c8-b351-593ba1902d6c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="FormLib.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="IList.cpp">
+      <Filter>源文件\Collection</Filter>
+    </ClCompile>
+    <ClCompile Include="ICollection.h">
+      <Filter>头文件\System\Collection</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="IList.h">
+      <Filter>头文件\System\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedList.h">
+      <Filter>头文件\System\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="Property.h">
+      <Filter>头文件\System\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="QuickProperty.h">
+      <Filter>头文件\System\Util</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

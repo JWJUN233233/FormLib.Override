@@ -2,10 +2,23 @@
 //
 
 #include <iostream>
-
+#include "LinkedList.h"
+using namespace System::Collection;
 int main()
 {
-    std::cout << "Hello World!\n";
+    LinkedList<int> list;
+    for (int i = 0; i < 1000; i++) {
+        list.Add(i);
+    }
+    list.Clear();
+    std::cout << list.Count << std::endl;
+
+    for (int i = 0; i < 100000; i++) {
+        list.Add(i);
+    }
+    list.Set(0, 123123123);
+    std::cout << list.Get(0) << std::endl;
+    std::cout << list.Count;
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
